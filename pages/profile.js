@@ -11,7 +11,7 @@ export async function getServerSideProps(context){
   // will be a valid session object if a user is authenticated 
   const session = await getSession({req: context.req})
   // const session = getSession(context)
-  console.log('session= ', session)
+  // console.log('session= ', session)
   // no user logged in
   if(!session){
     return {
