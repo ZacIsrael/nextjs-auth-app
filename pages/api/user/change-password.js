@@ -60,9 +60,9 @@ async function handler(req, res){
         return;
     }
 
-    console.log('newPassword= ', newPassword)
+    // console.log('newPassword= ', newPassword)
     const finalPassword = await hashPassword(newPassword);
-    console.log('finalPassword= ', finalPassword)
+    // console.log('finalPassword= ', finalPassword)
     
     let result;
 
